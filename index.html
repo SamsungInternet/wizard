@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Scroll Snap demo</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Bellota+Text|Sen&display=swap');
+    </style> 
+    <script src="script.js"></script>
+  </head>  
+  <body>
+    <header><h1>The Magazine Edition</h1><h2>Glossy, fashionable & desirable</h2></header>
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;background:white;border-radius:10%;padding: 0.2em;"></div><script src="https://button.glitch.me/button.js"></script>
+    <nav>
+      <a href="#article1">Article 1</a>
+      <a href="#article2">Article 2</a>
+      <a href="#article3">Article 3</a>
+    </nav>
+    <main>
+      <article id="article1"><script>replace(document.currentScript, './article1.html')</script></article>
+      <article id="article2"><script>replace(document.currentScript, './article2.html')</script></article>
+      <article id="article3"><script>replace(document.currentScript, './article3.html')</script><img src="https://adalytics-live.glitch.me/counter.png?fallback=Scolling Pane Demo&color=black" alt="" style="vertical-align: bottom;" aria-hidden="true"></article>
+    </main>
+  </body>
+</html>
