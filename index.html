@@ -1,28 +1,39 @@
+---
+title: Security and Privacy Wizard
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Scroll Snap demo</title>
+    <title>{{page.title}}</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/samsunginternet/OneUI-Web/oui-css/oui.css">
     <link rel="stylesheet" href="./style.css">
-    <style>
-      @import url('https://fonts.googleapis.com/css?family=Bellota+Text|Sen&display=swap');
-    </style> 
+    <script src="https://cdn.jsdelivr.net/gh/SamsungInternet/OneUI-Web@master/oui-css/scripts/polyfill/focus-visible.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/SamsungInternet/OneUI-Web@master/oui-css/scripts/oui.js" defer></script>    
     <script src="script.js"></script>
   </head>  
-  <body>
-    <header><h1>The Magazine Edition</h1><h2>Glossy, fashionable & desirable</h2></header>
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;background:white;border-radius:10%;padding: 0.2em;"></div><script src="https://button.glitch.me/button.js"></script>
-    <nav>
-      <a href="#article1">Article 1</a>
-      <a href="#article2">Article 2</a>
-      <a href="#article3">Article 3</a>
-    </nav>
-    <main>
-      <article id="article1"><script>replace(document.currentScript, './article1.html')</script></article>
-      <article id="article2"><script>replace(document.currentScript, './article2.html')</script></article>
-      <article id="article3"><script>replace(document.currentScript, './article3.html')</script><img src="https://adalytics-live.glitch.me/counter.png?fallback=Scolling Pane Demo&color=black" alt="" style="vertical-align: bottom;" aria-hidden="true"></article>
+  <body class="container">
+    <header class="oui-viewing"><h1>{{ page.title }}</h1></header>
+    <main class="oui-interaction oui-bubble">
+      {% for page in site.pages %}
+      {% assign folder = page.path | split: "/" %}
+      {% if folder[0] == "pages" %}
+      <article id="{{ page.title | slugify}}">
+        {{ page.content | markdownify }}
+      </article>
+      {% endif %}{% endfor %}
     </main>
+    <details style="position: absolute; right: 1em; bottom: 1em;" class="oui-menu">
+      <summary tabindex="0" class="oui-button oui-menu-trigger">Pages</summary>
+      <nav><ul class="oui-bubble oui-frosted">
+        {% for page in site.pages %}
+        {% assign folder = page.path | split: "/" %}
+        {% if folder[0] == "pages" %}
+        <li class="oui-overlay-bubble-item"><a href="#{{ page.title | slugify}}">{{ page.title }}</a></li>
+        {% endif %}{% endfor %}
+      </ul></nav>
+    </details>
   </body>
 </html>
