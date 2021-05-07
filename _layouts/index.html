@@ -16,8 +16,8 @@
     <main class="oui-interaction oui-bubble">
       {% assign articles = site.pages | where_exp:"paged", "paged.path contains page.pages" %}
       {% for article in articles %}
-      <article id="{{ page.title | slugify}}">
-        <h2>{{page.title}}</h2>
+      <article id="{{ article.title | slugify}}">
+        <h2>{{article.title}}</h2>
         {{ article.content | markdownify }}
         {% assign prevIndex = forloop.index0 | minus:'1' %}
         {% assign previous = articles[prevIndex] %}
