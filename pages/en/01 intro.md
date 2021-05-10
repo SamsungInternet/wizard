@@ -10,6 +10,8 @@ focused on thoroughly preserving your privacy.
 With that in mind the most fundamental thing you can do is ensure you are using
 the most up-to-date version of the browser you are using.
 
+When your browser is up to date it has the latest patches and security features to ensure that you are protected whilst you browse the Web.
+
 The links below will let you download the latest version of Samsung Internet or Samsung Internet Beta, the Beta version is aimed at people who want to test the newest features in Samsung Internet. If you aren't sure which to pick just download "Samsung Internet".
 
 [Samsung Internet](https://galaxy.store/internet)
