@@ -2,4 +2,6 @@
 title: Smart Anti-tracking
 ---
 
-Here is what smart anti tracking does and how to turn it on...
+Smart Anti Tracking will try to block tracking cookies in a way which doesn't break the functionality of web sites. You can turn it on by following these steps:
+
+[TODO SCREENSHOT OF SMART ANTI TRACKING]
