@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{page.title}}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/samsunginternet/OneUI-Web@master/oui-css/oui.css">
+    <link rel="stylesheet" href="{{ 'style.css' | relative_url }}">
+    <script src="https://cdn.jsdelivr.net/gh/SamsungInternet/OneUI-Web@master/oui-css/scripts/polyfill/focus-visible.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/SamsungInternet/OneUI-Web@master/oui-css/scripts/oui.js" defer></script>    
+    <script src="{{ 'script.js' | relative_url }}"></script>
+  </head>  
+  <body class="container">
+    <header class="oui-viewing"><h1>{{ page.title }}</h1></header>
+    <main class="oui-interaction oui-bubble">
+      {% assign articles = site.pages | where_exp:"paged", "paged.path contains page.pages" %}
+      {% for article in articles %}
+      <article id="{{ article.title | slugify}}">
+        <h2>{{article.title}}</h2>
+        {{ article.content | markdownify }}
+        {% assign prevIndex = forloop.index0 | minus:'1' %}
+        {% assign previous = articles[prevIndex] %}
+        {% assign next = articles[forloop.index] %}
+        {% if previous and prevIndex >= 0 %}<a href="#{{ previous.title | slugify }}">Previous Page: {{previous.title}}</a>{% endif %}
+        {% if next %}<a href="#{{ next.title | slugify }}">Next Page: {{next.title}}</a>{% endif %}
+    {% assign next = next %}
+      </article>
+      {% endfor %}
+    </main>
+    <nav style="position: absolute; right: 1em; bottom: 1em;"><details class="oui-menu">
+      <summary tabindex="0" class="oui-button oui-menu-trigger">Pages</summary>
+      <ul class="oui-bubble oui-frosted oui-menu-direction-up oui-menu-direction-left">
+        {% for article in articles %}
+        <li class="oui-overlay-bubble-item">
+          <a href="#{{ article.title | slugify}}">{{ article.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </details></nav>
+    {% assign langs = site.pages | where_exp: "lang", "lang.lang_label" %}
+    <nav style="position: absolute; left: 1em; bottom: 1em;"><details class="oui-menu">
+      <summary tabindex="0" class="oui-button oui-menu-trigger">{{ page.lang_label | default: 'English' }}</summary>
+      <ul class="oui-bubble oui-frosted oui-menu-direction-up oui-menu-direction-left">
+        {% for lang in langs %}
+        <li class="oui-overlay-bubble-item">
+          <a href="{{ lang.url | relative_url }}">{{ lang.lang_label }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </details></nav>
+
+  </body>
+</html>
