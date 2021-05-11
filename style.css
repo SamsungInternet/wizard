@@ -94,15 +94,27 @@ b {
 		grid-template: min-content min-content 1fr/max-content 1fr;
 		margin: 0;
 		max-width: none;
+		gap: 1em;
 	}
 	.article-nav, .lang-nav {
 		position: static;
+		z-index: auto;
 	}
-	.article-nav>details, .lang-nav>details {
+	/* .article-nav>details, .lang-nav>details {
 		display: contents;
-	}
+	} */
+	/* .article-nav>details>summary, .lang-nav>details>summary {
+		display: none;
+	} */
 	.article-nav>details>ul, .lang-nav>details>ul {
-		position: static;
+		/* position: static;
+		opacity: 1 !important;
+		transform: none; */
+		left: 0 !important;
+		top: 0 !important;
+		bottom: auto !important;
+		right: auto !important;
+		z-index: 4;
 	}
 	main.oui-interaction {
 		grid-column: 2;
