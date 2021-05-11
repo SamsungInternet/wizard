@@ -20,10 +20,6 @@ main.oui-interaction {
   padding: 0;
 }
 
-article {
-  padding: 10px 20px;
-}
-
 /* On small screens use proximity instead for a slightly different experience */
 /* @media only screen and (max-width: 480px) {
   main {
@@ -59,4 +55,75 @@ h1, h2, h3, h4 {
 article {
   height: 100%;
   overflow-y: auto;
+  padding: 10px 20px;
+}
+
+article:after {
+  content: '';
+  padding-bottom: 20vh;
+  display: block;
+}
+
+article > * {
+  margin: revert;
+  padding: revert;
+}
+
+.article-nav, .lang-nav {
+  position: absolute;
+  bottom: 1em;
+  z-index: 2;
+}
+.article-nav {
+  right: 1em;
+}
+.lang-nav {
+ left: 1em;
+}
+
+b {
+  font-weight: bold;
+}
+
+/* On Desktop Break Open the Menus to make the most of the space*/
+@media screen and (min-width: 600px) {
+  body.container {
+    display: grid;
+    grid-template: min-content min-content 1fr/max-content 1fr;
+    margin: 0;
+    max-width: none;
+  }
+
+  .article-nav, .lang-nav {
+    position: static;
+  }
+
+  .article-nav > details,
+  .lang-nav > details {
+    display: contents;
+  }
+
+  .article-nav > details > ul,
+  .lang-nav > details > ul {
+    position: static;
+  }
+
+  main.oui-interaction {
+    grid-column: 2;
+    grid-row: 2/span 2;
+    display: block;
+    scroll-snap-type: none;
+  }
+
+  header {
+    grid-column-end:span 2;
+  }
+
+  main > article {
+    height: auto;
+    padding-bottom: 2em;
+  }
+  main > article:after {
+    content: none;
+  }
 }

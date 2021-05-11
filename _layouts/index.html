@@ -1,3 +1,5 @@
+{% assign langs = site.pages | where_exp: "lang", "lang.lang_label" %}
+{% assign articles = site.pages | where_exp:"paged", "paged.path contains page.pages" %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,22 +15,7 @@
   </head>  
   <body class="container">
     <header class="oui-viewing"><h1>{{ page.title }}</h1></header>
-    <main class="oui-interaction oui-bubble">
-      {% assign articles = site.pages | where_exp:"paged", "paged.path contains page.pages" %}
-      {% for article in articles %}
-      <article id="{{ article.title | slugify}}">
-        <h2>{{article.title}}</h2>
-        {{ article.content | markdownify }}
-        {% assign prevIndex = forloop.index0 | minus:'1' %}
-        {% assign previous = articles[prevIndex] %}
-        {% assign next = articles[forloop.index] %}
-        {% if previous and prevIndex >= 0 %}<a href="#{{ previous.title | slugify }}">Previous Page: {{previous.title}}</a>{% endif %}
-        {% if next %}<a href="#{{ next.title | slugify }}">Next Page: {{next.title}}</a>{% endif %}
-    {% assign next = next %}
-      </article>
-      {% endfor %}
-    </main>
-    <nav style="position: absolute; right: 1em; bottom: 1em;"><details class="oui-menu">
+    <nav class="article-nav"><details class="oui-menu">
       <summary tabindex="0" class="oui-button oui-menu-trigger">Pages</summary>
       <ul class="oui-bubble oui-frosted oui-menu-direction-up oui-menu-direction-left">
         {% for article in articles %}
@@ -38,8 +25,7 @@
         {% endfor %}
       </ul>
     </details></nav>
-    {% assign langs = site.pages | where_exp: "lang", "lang.lang_label" %}
-    <nav style="position: absolute; left: 1em; bottom: 1em;"><details class="oui-menu">
+    <nav class="lang-nav"><details class="oui-menu">
       <summary tabindex="0" class="oui-button oui-menu-trigger">{{ page.lang_label | default: 'English' }}</summary>
       <ul class="oui-bubble oui-frosted oui-menu-direction-up oui-menu-direction-left">
         {% for lang in langs %}
@@ -49,6 +35,18 @@
         {% endfor %}
       </ul>
     </details></nav>
-
+    <main class="oui-interaction oui-bubble">
+      {% for article in articles %}
+      <article id="{{ article.title | slugify}}">
+        <h2>{{article.title}}</h2>
+        {{ article.content | markdownify }}
+        {% assign prevIndex = forloop.index0 | minus:'1' %}
+        {% assign previous = articles[prevIndex] %}
+        {% assign next = articles[forloop.index] %}
+        <!-- {% if previous and prevIndex >= 0 %}<a href="#{{ previous.title | slugify }}">Previous Page: {{previous.title}}</a>{% endif %} -->
+        {% if next %}<a href="#{{ next.title | slugify }}"><b>Next Page: {{next.title}}</b></a>{% endif %}
+      </article>
+      {% endfor %}
+    </main>
   </body>
 </html>
