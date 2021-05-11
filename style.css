@@ -1,35 +1,34 @@
-html,body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
 }
 
 main.oui-interaction {
-  /* Each child element is as wide as main in a single row */
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 100%;
-  grid-template-rows: 1fr;
-
-  /* This element will overflow scroll and scroll-snap */
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-
-  margin-bottom: 0;
-  padding: 0;
+	/* Each child element is as wide as main in a single row */
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: 100%;
+	grid-template-rows: 1fr;
+	/* This element will overflow scroll and scroll-snap */
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	margin-bottom: 0;
+	padding: 0;
 }
 
 /* On small screens use proximity instead for a slightly different experience */
+
 /* @media only screen and (max-width: 480px) {
-  main {
-    scroll-snap-type: x proximity;
-  }
+	main {
+		scroll-snap-type: x proximity;
+	}
 } */
 
-main > article {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
+main>article {
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
 }
 
 /**
@@ -37,93 +36,88 @@ article layout
 **/
 
 body {
-  font-family: 'Sen', sans-serif;
-  display: grid;
-  grid-template-rows: min-content 1fr;
+	font-family: 'Sen', sans-serif;
+	display: grid;
+	grid-template-rows: min-content 1fr;
 }
 
 header.oui-viewing {
-  padding: 0.2em 2em;
-  background: var(--color1);
-  min-height: auto;
+	padding: 0.2em 2em;
+	background: var(--color1);
+	min-height: auto;
 }
 
-h1, h2, h3, h4 {     
-  font-family: 'Bellota Text', cursive;
+h1, h2, h3, h4 {
+	font-family: 'Bellota Text', cursive;
 }
 
 article {
-  height: 100%;
-  overflow-y: auto;
-  padding: 10px 20px;
+	height: 100%;
+	overflow-y: auto;
+	padding: 10px 20px;
 }
 
 article:after {
-  content: '';
-  padding-bottom: 20vh;
-  display: block;
+	content: '';
+	padding-bottom: 20vh;
+	display: block;
 }
 
-article > * {
-  margin: revert;
-  padding: revert;
+article>* {
+	margin: revert;
+	padding: revert;
 }
 
 .article-nav, .lang-nav {
-  position: absolute;
-  bottom: 1em;
-  z-index: 2;
+	position: absolute;
+	bottom: 1em;
+	z-index: 2;
 }
+
 .article-nav {
-  right: 1em;
+	right: 1em;
 }
+
 .lang-nav {
- left: 1em;
+	left: 1em;
 }
 
 b {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 /* On Desktop Break Open the Menus to make the most of the space*/
+
 @media screen and (min-width: 600px) {
-  body.container {
-    display: grid;
-    grid-template: min-content min-content 1fr/max-content 1fr;
-    margin: 0;
-    max-width: none;
-  }
-
-  .article-nav, .lang-nav {
-    position: static;
-  }
-
-  .article-nav > details,
-  .lang-nav > details {
-    display: contents;
-  }
-
-  .article-nav > details > ul,
-  .lang-nav > details > ul {
-    position: static;
-  }
-
-  main.oui-interaction {
-    grid-column: 2;
-    grid-row: 2/span 2;
-    display: block;
-    scroll-snap-type: none;
-  }
-
-  header {
-    grid-column-end:span 2;
-  }
-
-  main > article {
-    height: auto;
-    padding-bottom: 2em;
-  }
-  main > article:after {
-    content: none;
-  }
+	body.container {
+		display: grid;
+		grid-template: min-content min-content 1fr/max-content 1fr;
+		margin: 0;
+		max-width: none;
+	}
+	.article-nav, .lang-nav {
+		position: static;
+	}
+	.article-nav>details, .lang-nav>details {
+		display: contents;
+	}
+	.article-nav>details>ul, .lang-nav>details>ul {
+		position: static;
+	}
+	main.oui-interaction {
+		grid-column: 2;
+		grid-row: 2/span 2;
+		display: block;
+		scroll-snap-type: none;
+	}
+	header {
+		grid-column-end: span 2;
+	}
+	main>article {
+		height: auto;
+		padding-bottom: 2em;
+	}
+	main>article:after {
+		content: none;
+	}
 }
