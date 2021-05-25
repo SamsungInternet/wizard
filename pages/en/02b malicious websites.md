@@ -20,7 +20,7 @@ Samsung will try to keep you safe whilst browsing using Google's safe browsing s
 
 This feature is turned on by default so you don't need to do anything.
 
-It's regularly updated with lists of new dangerous Web Sites, but dangerous parties are always trying to make new dangerous Web Sites so you should still remain vigilant.
+It's regularly updated with lists of new dangerous websites, but dangerous parties are always trying to make new dangerous websites so you should still remain vigilant.
 
 If you ever see this message then the site you have just tried to go to has been identified as dangerous and you should probably go back.
 
