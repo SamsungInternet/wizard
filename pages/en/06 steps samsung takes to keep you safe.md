@@ -10,7 +10,7 @@ These should all be turned on for the safest browsing experience:
 
 ### Block backward redirections
 
-Malicious Web Sites will sometimes try to prevent you from leaving or send you to other pages when you try to leave by pressing the back button. This works by inserting malicious entries into your history stack. 
+Malicious websites will sometimes try to prevent you from leaving or send you to other pages when you try to leave by pressing the back button. This works by inserting malicious entries into your history stack. 
 
 This setting prevents this attack by blocking this ability.
 
@@ -20,7 +20,7 @@ This blocks web pages trying to open new windows and tabs in the background as y
 
 ### Block apps from opening Internet
 
-Some bad apps on your phone will try to get your attention by repeatedly opening your default Web Browser on a spam Web Page. If you set your default Web Browser to Samsung Internet you can then block these app from opening the browser so they cannot spam you.
+Some bad apps on your phone will try to get your attention by repeatedly opening your default Web Browser on a spam Web Page. If you set your default Web Browser to Samsung Internet you can then block these apps from opening the browser so they cannot spam you.
 
 Pressing this setting will list all the apps that recently opened the Web Browser, how many times each app opened the browser, then let you block the app.
 
@@ -42,4 +42,4 @@ Prevents Web Sites from trying to sneakily download dangerous files.
 
 ### Finger Printing Protection
 
-This isn't an option to turn on and off. It's part of how the browser is built. We try to prevent Web Sites from uniquely identifying your device based on particular browser/device information. It's an ongoing process that gets better with each new version of the browser.
+This isn't an option to turn on and off. It's part of how the browser is built, it collects data based on how you interact with your browser. We try to prevent websites from uniquely identifying your device based on particular browser/device information. It's an ongoing process that gets better with each new version of the browser.
