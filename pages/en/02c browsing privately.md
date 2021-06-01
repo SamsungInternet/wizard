@@ -6,7 +6,7 @@ Large advertising networks, such as Facebook and Google, provide services to web
 
 These advertising networks try to have tracking elements like these on as many sites as possible so they can track you from site to site and uniquely identify you.
 
-This allows them to build a virtual consumer profile of you so that they can offer you targetted advertisements. This often gets called "better advertising" but can lead to some scary practices like using this data to charge more for car insurance to young men who look at car websites since they may be a higher risk.
+This allows them to build a virtual consumer profile of you so that they can offer you targeted advertisements. This often gets called "better advertising" but can lead to some scary practices like using this data to charge more for car insurance to young men who look at car websites since they may be a higher risk.
 
 ### Solution
 

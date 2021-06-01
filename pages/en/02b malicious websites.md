@@ -10,7 +10,9 @@ Sites like this are usually going for something quite malicious such as wanting 
 
 The final type of risky site you will encounter are spoof websites. If you receive a text saying it's from your bank, phone company, Samsung or Microsoft or your government with a URL there is a good chance it is fake. 
 
-[TODO INSERT PHOTO OF SUSPICIOUS TEXT MESSAGE]
+<figure><img alt="A suspicious text message reading: ROYALMAIL: Your parcel has a £2.99 shipping fee. Visit: https://royal.maiI-deliverg-b338792.com/ to make a payment and avoid it being returned to the sender." src="{{ "/assets/en/scamsms.png" | relative_url }}"><figcaption>A scam text message note that the URL in the text message is not the official royal mail website RoyalMail.com</figcaption></figure>
+
+If you would like more information about fake URLs [this article on the topic of fake URLs in SMS messages by Terrence Eden](https://shkspr.mobi/blog/2020/01/scammers-registering-date-based-domain-names/) is a great place to start.
 
 ### Solution
 
@@ -24,4 +26,7 @@ It's regularly updated with lists of new dangerous websites, but dangerous parti
 
 If you ever see this message then the site you have just tried to go to has been identified as dangerous and you should probably go back.
 
-[Screenshot of Safe Browsing]
+<figure>
+<img alt="Screenshot of a Website Reading: Deceptive site ahead Attackers on testsafebrowsing.appspot.com may trick you into doing something dangerous like installing software or revealing your personal information (for example, passwords, phone numbers, or credit card details). 
+You can find out more about social engineering (phishing) at Social Engineering (Phishing  and Deceptive Sites) or from www.antiphishing.org" src="{{ "/assets/en/deceptive.png" | relative_url }}">
+<figcaption>A screenshot of the sort of screen you see when you accidentally browse to a dangerous web site.</figcaption></figure>
