@@ -42,6 +42,8 @@ Prevents Web Sites from trying to sneakily download dangerous files.
 
 ### Finger Printing Protection
 
-This isn't an option to turn on and off. It's part of how the browser is built, it collects data based on how you interact with your browser.
+Finger Printing Protection isn't a feature to turn on and off. It's a design principal in how the browser is built.
+
+Fingerprinting is when websites collect data based on how you interact with your browser, or unique properties of your phone. If a website can uniquely identify this device it can track when you return or even when you browse other sites in some cases.
 
 We try to prevent websites from uniquely identifying your device based on particular browser/device information. It's an ongoing process that gets better with each new version of the browser.
