@@ -14,16 +14,13 @@ When your browser is up to date it has the latest patches and security features 
 
 The links below will let you download the latest version of Samsung Internet or Samsung Internet Beta, the Beta version is aimed at people who want to test the newest features in Samsung Internet. If you aren't sure which to pick just download "Samsung Internet".
 
-<a href="https://galaxy.store/internet">
-<figure>
-<img alt="Get it on the Galaxy Store" src="{{ "/assets/en/GalaxyStore.png" | relative_url }}">
-<figcaption>Samsung Internet</figcaption>
-</figure>
-</a>
 
-<a href="https://galaxy.store/internetbeta">
 <figure>
-<img alt="Get it on the Galaxy Store" src="{{ "/assets/en/GalaxyStore.png" | relative_url }}">
-<figcaption>Samsung Internet Beta</figcaption>
+<a href="https://galaxy.store/internet"><img alt="Get it on the Galaxy Store" src="{{ "/assets/en/GalaxyStore.png" | relative_url }}"></a>
+<figcaption><a href="https://galaxy.store/internet">Install Samsung Internet</a></figcaption>
 </figure>
-</a>
+
+<figure>
+<a href="https://galaxy.store/internetbeta"><img alt="Get it on the Galaxy Store" src="{{ "/assets/en/GalaxyStore.png" | relative_url }}"></a>
+<figcaption><a href="https://galaxy.store/internetbeta">Install Samsung Internet Beta</a></figcaption>
+</figure>

@@ -4,6 +4,10 @@ html, body {
 	margin: 0;
 }
 
+figure > * {
+    max-width: 100%;
+}
+
 main.oui-interaction {
 	/* Each child element is as wide as main in a single row */
 	display: grid;
