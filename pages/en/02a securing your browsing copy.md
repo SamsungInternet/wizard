@@ -26,4 +26,11 @@ i.e. if your browser at https://example.com/site/index.html any intermediary par
 
 ### Solution 2. 
 
-Using a Virtual Private Network aka a VPN. VPNs are a paid service which masks all your browsing data. Your Internet Provider can see that you are using a VPN but all the other data is totally secure even "http:" sites!
+Using a Virtual Private Network aka a VPN. VPNs are a paid service which masks all your browsing data. Your Internet Provider can see that you are using a paid VPN but all the other data is totally secure even "http:" sites!
+
+#### Recommended VPNs:
+
+* [Nord VPN](https://nordvpn.com/)
+* [Express VPN](https://www.expressvpn.com/)
+* [Mozilla VPN](https://www.mozilla.org/en-US/products/vpn/)
+* [Proton VPN](https://protonvpn.com/) (This is free but it's a subsidised service.)
