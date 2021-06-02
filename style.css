@@ -4,8 +4,16 @@ html, body {
 	margin: 0;
 }
 
+figure {
+	margin: 0;
+}
+
+img, video {
+	max-width: 100%;
+}
+
 figure > * {
-    max-width: 100%;
+	max-width: 100%;
 }
 
 main.oui-interaction {
@@ -70,6 +78,7 @@ article:after {
 article>* {
 	margin: revert;
 	padding: revert;
+	list-style: revert;
 }
 
 .article-nav, .lang-nav {
