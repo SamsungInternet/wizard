@@ -1,0 +1,17 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "Samsung Internet Security and Privacy Wizard",
+    "short_name": "SI Privacy Wizard",
+    "scope": "/",
+    "display": "standalone",
+    "start_url": "https://security.samsunginter.net/",
+    "background_color": "#000000",
+    "theme_color": "transparent",
+    "description": "This guide will help you make Samsung Internet be as secure as possible and explain how it protects you.",
+    "orientation": "any",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [],
+    "url": "https://security.samsunginter.net/"
+}
