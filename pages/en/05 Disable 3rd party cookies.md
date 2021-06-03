@@ -8,7 +8,7 @@ This setting may break websites in rare cases, which is why it is not turned on 
 
 This prevents the majority of ways tracking networks follow you around the Web. You turn them off using the  settings page at: 
 
-Settings ➔ Sites and downloads ➔ Site permissions ➔ Cookies ➔ Block third-party cookies
+*Settings* ➔ *Sites and downloads* ➔ *Site permissions* ➔ *Cookies* ➔ *Block third-party cookies*
 
 <figure>
 <video controls src="{{ "/assets/en/cookies.mp4" | relative_url }}"></video>
