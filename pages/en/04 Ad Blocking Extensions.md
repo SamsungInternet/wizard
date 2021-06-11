@@ -18,7 +18,7 @@ Because Samsung phones have access to the Galaxy Store they can install extensio
 
 ### Non Samsung Phones
 
-Non Samsung Phones need to install Ad-Blockers through the Play Store. Here are a few which I use on my phone:
+Non Samsung Phones need to install Ad-Blockers through the Play Store. Here are a few:
 
 * [AdGuard Content Blocker](https://play.google.com/store/apps/details?id=com.adguard.android.contentblocker)
 * [Disconnect for Samsung Internet](https://play.google.com/store/apps/details?id=com.disconnect.samsungcontentblocker)
