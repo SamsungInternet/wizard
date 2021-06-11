@@ -1,37 +1,26 @@
-Welcome to Glitch
-=================
+Samsung Internet Security Wizard
+================================
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+The goal of this is to provide a guide to help people browse the Web Securely.
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+Some of the features are Samsung Specific.
 
-Find out more [about Glitch](https://glitch.com/about).
+## Testing locally
 
+* Install ruby and [Install Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll)
+* Run with jekyll: `jekyll run serve`
+* Open up localhost:4000 in your browser
 
-Your Project
-------------
+## Adding a new language
 
-### ← README.md
+Here are the steps for adding a new language:
 
-That's this file, where you can tell people what your cool website does and how you built it.
+Duplicate the folder language you want to translate from in `pages/` e.g. `pages/en/` to `pages/kr/`
 
-### ← index.html
+For the files in the folder the filename is only used for the order of the pages, in alphabetical order, so rename however you want but keep the numbers at the start.
 
-Where you'll write the content of your website. 
+Duplicate `en.md` in the root of the repo. Rename it to the country code for your language. E.g. `kr.md`
 
-### ← style.css
+In this file translate `title` and `desc` and set `pages` to the location of your new folder. E.g. `pages/kr/`
 
-CSS files add styling rules to your content.
-
-### ← script.js
-
-If you're feeling fancy you can add interactivity to your site with JavaScript.
-
-### ← assets
-
-Drag in `assets`, like images or music, to add them to your project
-
-Made by [Glitch](https://glitch.com/)
--------------------
-
-\ ゜o゜)ノ
+You are welcome to use the assets from another language but it may be better for your users if you reproduce the assets from a region & language correct device to ensure it makes sense for the readers.
