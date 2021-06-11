@@ -5,7 +5,14 @@ The goal of this is to provide a guide to help people browse the Web Securely.
 
 Some of the features are Samsung Specific.
 
+## Building
+
+This uses GitHub pages so there is no build step needed. Changing the files on GitHub will automatially
+generate the web site.
+
 ## Testing locally
+
+To test your changes locally before merging them you can install Jekyll locally which is what GitHub pages uses.
 
 * Install ruby and [Install Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll)
 * Run with jekyll: `jekyll run serve`
