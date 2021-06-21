@@ -17,3 +17,4 @@ There are 3 things you can turn on in Samsung Internet to help with this.
  - [Smart Anti Tracking](#smart-anti-tracking)
  - [Ad Blockers](#ad-blocking-extensions)
  - [Disable 3rd Party Cookies](#disable-3rd-party-cookies)
+ 
