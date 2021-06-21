@@ -14,12 +14,12 @@ Vous pouvez vérifier si vous avez installé la dernière version de Samsung Int
 Les liens ci-dessous vous permettront de télécharger la dernière version de Samsung Internet ou Samsung Internet Beta. La version Beta est destinée aux personnes qui souhaitent tester les nouvelles fonctionnalités de Samsung Internet. Si vous n'êtes pas sûr de votre choix, téléchargez simplement "Samsung Internet".
 
 <figure>
-<a href="https://galaxy.store/internet"><img width="236" height="64" alt="Get it on the Galaxy Store" src="{{ "/assets/en/GalaxyStore.png" | relative_url }}"></a>
+<a href="https://galaxy.store/internet"><img width="236" height="64" alt="Télécharger sur le Galaxy Store" src="{{ "/assets/en/GalaxyStore.png" | relative_url }}"></a>
 <figcaption><a href="https://galaxy.store/internet">Installer Samsung Internet</a></figcaption>
 </figure>
 
 <figure>
-<a href="https://galaxy.store/internetbeta"><img width="236" height="64" alt="Get it on the Galaxy Store" src="{{ "/assets/en/GalaxyStore.png" | relative_url }}"></a>
+<a href="https://galaxy.store/internetbeta"><img width="236" height="64" alt="Télécharger sur le Galaxy Store" src="{{ "/assets/en/GalaxyStore.png" | relative_url }}"></a>
 <figcaption><a href="https://galaxy.store/internetbeta">Installer Samsung Internet Beta</a></figcaption>
 </figure>
 
