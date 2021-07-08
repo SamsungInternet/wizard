@@ -20,8 +20,8 @@ Les téléphones Samsung ayant accès au Galaxy Store peuvent installer des exte
 
 Les téléphones autres que Samsung doivent installer des bloqueurs de publicité via le Play Store. En voici quelques-uns :
 
-* [AdGuard Content Blocker] (https://play.google.com/store/apps/details?id=com.adguard.android.contentblocker)
-* Disconnect pour Samsung Internet] (https://play.google.com/store/apps/details?id=com.disconnect.samsungcontentblocker)
+* [AdGuard Content Blocker](https://play.google.com/store/apps/details?id=com.adguard.android.contentblocker)
+* Disconnect pour Samsung Internet](https://play.google.com/store/apps/details?id=com.disconnect.samsungcontentblocker)
 * [Adblock Plus pour Samsung Internet](https://play.google.com/store/apps/details?id=org.adblockplus.adblockplussbrowser)
 * [Adblock Fast](https://play.google.com/store/apps/details?id=com.rocketshipapps.adblockfast)
 
