@@ -14,6 +14,9 @@ img, video {
 
 figure > * {
 	max-width: 100%;
+	width: auto;
+	max-height: 80vh;
+	height: auto;
 }
 
 main.oui-interaction {
@@ -130,6 +133,7 @@ b {
 		grid-row: 2/span 2;
 		display: block;
 		scroll-snap-type: none;
+		overflow-x: auto;
 	}
 	header {
 		grid-column-end: span 2;
