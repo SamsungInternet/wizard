@@ -1,0 +1,20 @@
+<title>{{page.title}}</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/samsunginternet/OneUI-Web@master/oui-css/oui.css">
+<link rel="stylesheet" href="{{ 'style.css' | relative_url }}">
+<script src="https://cdn.jsdelivr.net/gh/SamsungInternet/OneUI-Web@master/oui-css/scripts/polyfill/focus-visible.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/SamsungInternet/OneUI-Web@master/oui-css/scripts/oui.js" defer></script>    
+<script src="{{ 'script.js' | relative_url }}"></script>
+<link rel="manifest" href="data:application/manifest+json,{{ content | strip_html | uri_escape }}">
+<link rel="shortcut icon" type="image/png" href="{{ "/assets/icons/images/android-launchericon-48-48.png" | relative_url }}"/>
+
+<meta name="twitter:card" content="summary" />
+<meta property="og:title" content="{{page.title}}">
+<meta name="twitter:site" content="@samsunginternet">
+<meta name="twitter:creator" content="@samsunginternet">
+<meta property="og:url" content="https://privacy.samsunginter.net">
+<meta name="description" content="{{page.desc}}">
+<meta property="og:description" content="{{page.desc}}">
+<meta property="og:image" content="https://privacy.samsunginter.net/assets/icons/original.png">

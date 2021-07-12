@@ -61,3 +61,7 @@ window.addEventListener('hashchange', function (e) {
   articleToShow.scrollIntoView();
   e.preventDefault();
 }, false);
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js');
+}
