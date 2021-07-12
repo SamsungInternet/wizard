@@ -49,7 +49,7 @@
       {% for article in articles %}
       <article id="{{ article.title | slugify}}">
         <h2>{{article.title}}</h2>
-        {{ article.content | markdownify }}
+        {{ article.content | markdownify | smartify }}
         {% assign prevIndex = forloop.index0 | minus:'1' %}
         {% assign previous = articles[prevIndex] %}
         {% assign next = articles[forloop.index] %}
