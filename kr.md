@@ -1,5 +1,5 @@
 ---
-title: '[KR Translate] Assistant de sécurité et de confidentialité'
+title: '보안 및 개인 정보 보호 도우미'
 layout: 'index'
 pages: 'pages/kr'
 permalink: '/kr/'
