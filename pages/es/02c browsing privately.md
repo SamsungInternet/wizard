@@ -1,18 +1,20 @@
 ---
-title: Tracking Between Websites
+title: Trackeando entre sitios
 ---
 
-Large advertising networks, such as Facebook and Google, provide services to websites like adverts, analytics, share buttons or widgets in exchange they are able to observe how you browser on their sites.
+Grandes redes de publicidad como Facebook y Google, proveen servicios a websites como anuncios, analíticas, botones de compartir 
+o widgets a cambio de observar cómo navegas en sus páginas web.
 
-These advertising networks try to have tracking elements like these on as many sites as possible so they can track you from site to site and uniquely identify you.
+Estas redes, tratan de trackear elementos en la mayor cantidad de sitios posibles, para que luego puedan trackear de una página web a otra e identificarte.
 
-This allows them to build a virtual consumer profile of you so that they can offer you targeted advertisements. This often gets called "better advertising" but can lead to some scary practices like using this data to charge more for car insurance to young men who look at car websites since they may be a higher risk.
+Esto les permite construir una especie de perfil tuyo como consumidor virtual y así enviarte ofertas personalizadas en sus
+anuncios. Esto es usualmente conocido como "publicidad personalizada" pero la realidad es que conduce a malas prácticas sobre la privacidad como por ejemplo, usar estos datos para aumentar el precio del seguro del auto a una persona que busca websites relacionados a autos.
 
-### Solution
+### Solución
 
-The solutions for this are a bit more complicated because it's an arms race between advertising networks and web browsers. Where web browsers try to preserve your privacy and the advertising networks try to bypass this.
+Las soluciones para este caso en particular son más complicadas, en general los navegadores tratan de preservar tu privacidad pero al mismo tiempo las redes de publicidad tratan de pasar estas políticas o se saltean las buenas prácticas para proteger al usuario.
 
-There are 3 things you can turn on in Samsung Internet to help with this.
+Samsung Internet posee tres herramientas que te pueden ayudar con este inconveniente.
 
  - [Smart Anti Tracking](#smart-anti-tracking)
  - [Ad Blockers](#ad-blocking-extensions)
