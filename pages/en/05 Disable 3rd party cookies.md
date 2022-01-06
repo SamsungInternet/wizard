@@ -1,16 +1,16 @@
 ---
-title: Inhabilitar cookies de terceros
+title: Disable 3rd party cookies
 ---
 
-Esta es una manera más extrema de prevenir el tracking basado en cookies, se realiza bloqueando cualquier cookie que no pertenezca al sitio web donde estás navegando. Las cookies de terceras partes son cookies que pertenecen a un dominio diferente del que se encuentra en la barra de direcciones del navegador. Por ejemplo si estás visitando la página "https://newspaper.com" y hay publicidad que llega a través de "https://adprovider.com", ellos usarán las cookies de terceros para rastrear información única que te pertenece. Si visitas otro sitio con cookies que pertenecen a adprovider.com, adprovider.com habilitará crear un perfil tuyo con una lista de sitios que visitas junto con su publicidad. Deshabilitar las cookies de terceros implica que estos anuncios o publicidad no puedan acceder a identificar ninguna información que puedan haber establecido como cookie en otro sitio.
+This is a more extreme way of preventing cookie based tracking. It blocks any cookies that do not belong to the website you are on. Third party cookies are cookies that belong to a different domain than the one in your address bar. For example if you are browsing "https://newspaper.com" and there are adverts provided by "https://adprovider.com", they will use third party cookies which set unique information about you. If you visit another site with cookies from adprovider.com, adprovider.com will be able to create a profile about you with a list of the sites you visit with their ads on. Disabling third party cookies means that these adverts cannot access any identifying information they may have set as a cookie on another site.
 
-Esta configuración puede alterar algunos websites en muy pocos casos, y esta es la razón por la cual no está habilitada por defecto, pero de todas formas mejorará tu privacidad a la hora de navegar por la web.
+This setting may break websites in rare cases, which is why it is not turned on by default, but will greatly enhance your privacy.
 
-Esto previene la mayoría de las formas de trackeo. Se puede deshabilitar las cookies de terceros utilizando la siguiente configuración:page at: 
+This prevents the majority of ways tracking networks follow you around the Web. You turn third party cookies off by using the settings page at: 
 
 *Settings* ➔ *Sites and downloads* ➔ *Site permissions* ➔ *Cookies* ➔ *Block third-party cookies*
 
 <figure>
 <video controls src="{{ "/assets/en/cookies.mp4" | relative_url }}"></video>
-<figcaption>Video que muestra los pasos para deshabilitar las cookiess.</figcaption>
+<figcaption>A video showing the steps to take to block all third party cookies.</figcaption>
 </figure>
