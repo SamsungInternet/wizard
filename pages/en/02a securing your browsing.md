@@ -22,7 +22,9 @@ Secure websites, which start with "https://" cannot be tampered with. Your inter
 
 Look for the padlock symbol in the address bar to ensure that the website is https.
 
-i.e. if your browser at https://example.com/site/index.html any intermediary parties can only see https://example.com
+i.e. if your browser shows https://example.com/site/index.html any intermediary parties can only see https://example.com
+
+Samsung Internet can help you ensure that more of your browsing is secured if you enable the "Switch to secure connection (HTTPS)" option under **Labs** in the **Settings** menu.
 
 ### Solution 2. 
 
